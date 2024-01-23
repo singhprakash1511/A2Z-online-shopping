@@ -9,7 +9,7 @@ function Login(props) {
         navigate('/signup')
     }
   return (
-    <div className='flex justify-center items-center flex-col m-auto mt-10 pb-3 gap-10  w-[520px]  border border-black rounded-[8px] '>
+    <div className='flex justify-center items-center flex-col m-auto mt-10 pb-3 gap-10  w-[520px]  border border-black rounded-[8px] login'>
       <LoginForm setIsLoggedIn={props.setIsLoggedIn}/>
 
       <button onClick={clickHandler} 

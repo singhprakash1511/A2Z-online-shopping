@@ -35,7 +35,7 @@ const LoginForm = (props) => {
       <form onSubmit={submitHandler} className='w-full flex gap-3 flex-col justify-center items-center my-7'>
         <label className='w-full px-5'>
 
-            <p className='text-[1.6rem] mb-1 leading[1.375rem]'>Email Address<sup className='text-pink-500 font-semibold'>*</sup></p>
+            <p className='text-[1.6rem] mb-1 leading[1.375rem] title'>Email Address<sup className='text-pink-500 font-semibold'>*</sup></p>
 
             <input 
             type="text" 
@@ -47,9 +47,9 @@ const LoginForm = (props) => {
             className='border border-black w-full p-[12px] rounded-[0.5rem]'/>
         </label>
 
-        <label className='w-full px-5 relative'>
+        <label className='w-full px-5 relative email'>
 
-            <p className='text-[1.6rem] mb-1 leading[1.375rem]'>Password<sup className='text-pink-500 font-semibold'>*</sup></p>
+            <p className='text-[1.6rem] mb-1 leading[1.375rem] title'>Password<sup className='text-pink-500 font-semibold'>*</sup></p>
 
             <input 
             type={showPassword ? "text" : "password"} 
@@ -60,7 +60,7 @@ const LoginForm = (props) => {
             placeholder='Enter Password'
             className='border border-black w-full p-[12px] rounded-[0.5rem]'/>
 
-        <span onClick={() => setShowPassword((prev) => !prev)} className='absolute right-[7%] top-[61%]  text-[1.2rem] cursor-pointer'>
+        <span onClick={() => setShowPassword((prev) => !prev)} className='absolute right-[8%] top-[61%]  text-[1.2rem] cursor-pointer'>
             {showPassword ? <AiFillEye /> : <AiFillEyeInvisible />}
         </span>
         </label>

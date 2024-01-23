@@ -41,8 +41,8 @@ function SignupForm(props) {
     <div className="w-full pt-4 pb-3">
       <form onSubmit={submitHandler} className="w-full flex flex-col justify-center items-center gap-[5px] ">
 
-        <div className="flex justify-evenly items-center w-full gap-3">
-          <label>
+        <div className="flex justify-evenly items-center w-full gap-3 fullName">
+          <label className="nameLabel first">
             <p className="text-[1.4rem] mb-[0.2rem] leading[1.375rem]">
               First Name<sup className="text-pink-500 font-semibold">*</sup>
             </p>
@@ -57,7 +57,7 @@ function SignupForm(props) {
             />
           </label>
 
-          <label>
+          <label className="nameLabel last">
             <p className="text-[1.4rem] mb-[0.2rem] leading[1.375rem]">
               Last Name<sup className="text-pink-500 font-semibold">*</sup>
             </p>

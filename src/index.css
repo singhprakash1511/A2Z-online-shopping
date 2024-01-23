@@ -17,3 +17,33 @@ code {
 }
 
 
+@media (max-width:640px){
+
+  .login{
+    width:350px;
+  }
+
+  .title{
+    font-size: 1.5rem;
+  }
+
+  .fullName{
+    display: flex;
+    gap: 1px;
+  }
+
+  .first{
+    padding-right: 8px;
+  }
+
+  .nameLabel{
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .last{
+    padding-right: 20px;
+  }
+
+}
+
