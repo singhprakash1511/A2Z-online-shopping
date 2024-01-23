@@ -5,7 +5,9 @@ import {add, remove} from '../Redux/Slices/CartSlice';
 
 
 const Product = ({ post }) => {
+  
   const {cart} = useSelector((state) => state);
+
   const dispatch = useDispatch();
 
   const addToCart =  () => {
